@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Keyword Matching Search Engine</title>
+
+    <link rel="stylesheet" href="daa.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🔍 Keyword Matching Search Engine</h1>
+        <p>DAA Project – Search and Rank Documents Using Algorithms</p>
+    </header>
+
+    <main>
+
+        <!-- Search Section -->
+        <section class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Enter keywords... e.g. machine learning"
+            >
+
+            <select id="algorithm">
+                <option value="linear">Linear Search</option>
+                <option value="binary">Binary Search</option>
+                <option value="hash">Hash Search</option>
+            </select>
+
+            <button onclick="searchDocuments()">
+                Search
+            </button>
+
+        </section>
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3>Documents</h3>
+                <p id="documentCount">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Results</h3>
+                <p id="resultCount">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Comparisons</h3>
+                <p id="comparisonCount">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Execution Time</h3>
+                <p id="executionTime">0 ms</p>
+            </div>
+
+        </section>
+
+        <!-- Algorithm Information -->
+        <section class="algorithm-info">
+
+            <h2>Algorithm Analysis</h2>
+
+            <div class="complexity">
+
+                <div>
+                    <h3>Linear Search</h3>
+                    <p>Best: O(1)</p>
+                    <p>Average: O(n)</p>
+                    <p>Worst: O(n)</p>
+                </div>
+
+                <div>
+                    <h3>Binary Search</h3>
+                    <p>Best: O(1)</p>
+                    <p>Average: O(log n)</p>
+                    <p>Worst: O(log n)</p>
+                </div>
+
+                <div>
+                    <h3>Hash Search</h3>
+                    <p>Average: O(1)</p>
+                    <p>Worst: O(n)</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Search Results -->
+        <section>
+
+            <h2>Search Results</h2>
+
+            <div id="results">
+                <p class="message">
+                    Enter a keyword to start searching.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>DAA Mini Project | Keyword Matching Search Engine</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
